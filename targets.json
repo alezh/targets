@@ -24,12 +24,27 @@
                 "logo_file": "axis_tft.bin",
                 "firmware": "Unified_ESP32_2400_TX"
             },
+            "geminiMav": {
+                "product_name": "Alz 2.4Ghz Gemini Mavlink TX",
+                "lua_name": "Alz Gemini2G4TX",
+                "layout_file": "Alz 2400 Gemini.json",
+                "overlay": {
+                    "debug_backpack_baud": 115200
+                },
+                "features": ["fan"],
+                "upload_methods": ["uart", "wifi"],
+                "platform": "esp32",
+                "min_version": "3.0.0",
+                "logo_file": "axis_tft.bin",
+                "firmware": "Unified_ESP32_2400_TX"
+            },
             "geminiS3": {
                 "product_name": "Alz 2.4Ghz Gemini TX S3",
                 "lua_name": "Alz Gemini2G4TX",
                 "layout_file": "Alz 2400 Gemini S3.json",
                 "upload_methods": ["uart", "wifi", "etx"],
                 "min_version": "3.4.0",
+                "logo_file": "axis_tft.bin",
                 "platform": "esp32-s3",
                 "firmware": "Unified_ESP32S3_2400_TX"
             }
@@ -47,6 +62,19 @@
                 "platform": "esp8285",
                 "firmware": "Unified_ESP8285_2400_RX",
                 "prior_target_name": "Alz_Nano_2400_RX"
+            },
+            "PA500": {
+                "product_name": "Alz Gemini PA 2.4Ghz 500mw RX",
+                "lua_name": "Gemini2G4RX500mw",
+                "layout_file": "Alz 2400 True Diversity PA.json",
+                "overlay": {
+                    "radio_dcdc": true
+                },
+                "min_version": "3.0.0",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_2400_RX",
+                "prior_target_name": "Alz_Gemini_2400_RX"
             },
             "sd24g": {
                 "product_name": "Alz True Diversity PA 2.4Ghz RX",
@@ -133,6 +161,27 @@
                 "min_version": "3.0.0",
                 "platform": "esp32",
                 "firmware": "Unified_ESP32_900_TX_SX126X"
+            },
+            "sx126x433": {
+                "product_name": "Alz SX126X 433MHz TCXO TX",
+                "lua_name": "Alz 2W 433MHZ",
+                "layout_file": "Alz 900 Micro 1W.json",
+                "overlay": {
+                    "power_min": 1,
+                    "power_high": 7,
+                    "power_max": 7,
+                    "power_default": 2,
+                    "power_control": 0,
+                    "power_values": [0,4,7,10,13,16,22],
+                    "sx126x_radio_dcdc": true,
+                    "sx126x_radio_tcxo": true
+                },
+                "logo_file": "axis_tft.bin",
+                "features": ["fan"],
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.4.0",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_900_TX_SX126X"
             }
         },
         "rx_900": {
@@ -150,6 +199,8 @@
                 "lua_name": "Alz900RX SX126x",
                 "layout_file": "Alz 900 SX126X.json",
                 "overlay": {
+                    "power_rxen": 9,
+                    "power_txen": 10,
                     "sx126x_radio_dcdc": true,
                     "sx126x_radio_tcxo": true
                 },
@@ -158,10 +209,29 @@
                 "platform": "esp8285",
                 "firmware": "Unified_ESP8285_900_RX_SX126X"
             },
-            "sx126x": {
-                "product_name": "Alz SX126X 900MHz RX",
-                "lua_name": "Alz900RX SX126x",
+            "sx126xtcxo": {
+                "product_name": "Alz SX126X 433MHz TCXO PA RX",
+                "lua_name": "Alz 433MHz RX",
                 "layout_file": "Alz 900 SX126X.json",
+                "overlay": {
+                    "power_rxen": 9,
+                    "power_txen": 10,
+                    "sx126x_radio_dcdc": true,
+                    "sx126x_radio_tcxo": true
+                },
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.0.0",
+                "platform": "esp8285",
+                "firmware": "Unified_ESP8285_900_RX_SX126X"
+            },
+            "sx126x433tcxo": {
+                "product_name": "Alz SX126X 433MHz TCXO RX",
+                "lua_name": "Alz 433 RX ",
+                "layout_file": "Alz 900 SX126X.json",
+                "overlay": {
+                    "sx126x_radio_dcdc": true,
+                    "sx126x_radio_tcxo": true
+                },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.0.0",
                 "platform": "esp8285",
