@@ -35,6 +35,7 @@ hardware_fields = {
     "radio_sck": FieldType.OUTPUT,
     "radio_dcdc": FieldType.BOOL,
     "radio_rfo_hf": FieldType.BOOL,
+    "radio_rfsw_ctrl": FieldType.ARRAY,
     "ant_ctrl": FieldType.OUTPUT,
     "ant_ctrl_compl": FieldType.OUTPUT,
     "power_enable": FieldType.OUTPUT,
@@ -136,7 +137,7 @@ field_groups = {
         # if one of the first group then all the first and second groups and
         # at-least one of the third group must also be defined
         [["serial_rx", "serial_tx"], [], []],
-        [["serial1_rx", "serial1_tx"], [], []],
+        [["serial1_rx"], ["serial1_tx"], []],
         [["power_min", "power_high", "power_max", "power_default", "power_control", "power_values"], [], []],
         [["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], [], []],
         [["use_backpack"], ["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], []],
