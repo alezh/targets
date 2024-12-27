@@ -76,6 +76,22 @@
                 "firmware": "Unified_ESP32_2400_RX",
                 "prior_target_name": "Alz_Gemini_2400_RX"
             },
+            "PA500V2": {
+                "product_name": "Alz Gemini PA 2.4Ghz 500mw RX V2",
+                "lua_name": "Gemini2G4RX500mw",
+                "layout_file": "Alz 2400 True Diversity PA.json",
+                "overlay": {
+                    "serial1_rx": 5,
+                    "serial1_tx": 18,
+                    "radio_rst_2": 21,
+                    "radio_dcdc": true
+                },
+                "min_version": "3.0.0",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_2400_RX",
+                "prior_target_name": "Alz_Gemini_2400_RX"
+            },
             "sd24g": {
                 "product_name": "Alz True Diversity PA 2.4Ghz RX",
                 "lua_name": "Gemini 2G4RX",
