@@ -26,7 +26,7 @@
     "led_rgb_isgrb": true,
 
     "joystick": 35,
-    "joystick_values": [1365, 3276, 2048, 2730, 0, 4095],
+    "joystick_values": [1365, 2730, 2048, 3276, 0, 4095],
     "radio_dcdc": true,
     "screen_cs": 16,
     "screen_dc": 4,

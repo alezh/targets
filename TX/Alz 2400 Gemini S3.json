@@ -24,7 +24,7 @@
   "power_control": 0,
   "power_values": [-16, -13, -10, -7, -2, 2],
   "joystick": 35,
-  "joystick_values": [1365, 3276, 2048, 2730, 0, 4095],
+  "joystick_values": [1365, 2730, 2048, 3276, 0, 4095],
   "led_rgb": 16,
   "led_rgb_isgrb": true,
 
