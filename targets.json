@@ -233,7 +233,7 @@
             }
         },
         "tx_dual": {
-            "nomad": {
+            "alzgx": {
                 "product_name": "Alz GeminiX 2.4/900 TX",
                 "lua_name": "Alz GeminiX",
                 "layout_file": "Alz GX12.json",
@@ -244,7 +244,7 @@
             }
         },
         "rx_dual": {
-            "xr1": {
+            "alzxr1": {
                 "product_name": "Alz Dual Band RX",
                 "lua_name": "Alz XR1",
                 "layout_file": "Generic C3 LR1121.json",
@@ -259,9 +259,9 @@
                 "platform": "esp32-c3",
                 "firmware": "Unified_ESP32C3_LR1121_RX"
             },
-            "xr4": {
-                "product_name": "RadioMaster XR4 Dual Band True Diversity RX",
-                "lua_name": "RM XR4",
+            "alzxr4": {
+                "product_name": "Alz Dual Band True Diversity RX",
+                "lua_name": "Alz GX",
                 "layout_file": "Generic LR1121 True Diversity.json",
                 "overlay": {
                     "serial1_rx": 5,
