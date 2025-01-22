@@ -241,6 +241,15 @@
                 "min_version": "3.4.0",
                 "platform": "esp32",
                 "firmware": "Unified_ESP32_LR1121_TX"
+            },
+            "jrtx": {
+                "product_name": "Alz 900/2400 Dual Band 1W TX",
+                "lua_name": "Alz 9002G4 TX",
+                "layout_file": "Alz Dual Band 1W.json",
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.5.2",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_LR1121_TX"
             }
         },
         "rx_dual": {
@@ -261,7 +270,7 @@
             },
             "alzxr4": {
                 "product_name": "Alz Dual Band True Diversity RX",
-                "lua_name": "Alz GX",
+                "lua_name": "Alz Dual GX",
                 "layout_file": "Generic LR1121 True Diversity.json",
                 "overlay": {
                     "serial1_rx": 5,
