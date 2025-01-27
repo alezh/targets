@@ -285,7 +285,7 @@
             "alzxr4": {
                 "product_name": "Alz D4 True Diversity RX",
                 "lua_name": "Alz D4 GX",
-                "layout_file": "Generic LR1121 True Diversity.json",
+                "layout_file": "Alz LR1121 True Diversity.json",
                 "overlay": {
                     "serial1_rx": 5,
                     "serial1_tx": 18,
