@@ -1,6 +1,6 @@
 {
-    "serial_rx": 3,
-    "serial_tx": 1,
+    "serial_rx": 19,
+    "serial_tx": 19,
   
     "radio_miso": 33,
     "radio_mosi": 32,
@@ -41,6 +41,8 @@
     "debug_backpack_baud": 460800,
     "debug_backpack_rx": 10,
     "debug_backpack_tx": 9,
+    "passthrough_baud": 230400,
+    
   
     "misc_fan_en": 2
   }
