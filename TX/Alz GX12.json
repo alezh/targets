@@ -34,6 +34,16 @@
     "led_rgb_isgrb": true,
     "ledidx_rgb_status": [0],
     "ledidx_rgb_boot": [0],
+
+    "screen_cs": 12,
+    "screen_dc": 2,
+    "screen_mosi": 18,
+    "screen_rst": 5,
+    "screen_sck": 23,
+    "screen_type": 4,
+
+    "joystick": 35,
+    "joystick_values": [1365, 2730, 2048, 3276, 0, 4095],
   
     "radio_dcdc": true,
   
