@@ -261,7 +261,24 @@
                     "serial1_rx": 18,
                     "serial1_tx": 19,
                     "power_values_dual": [-10, -6, -3, 2],
-                    "radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5]
+                    "radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5],
+                    "power_lna_gain": 12
+                },
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_LR1121_RX"
+            },
+            "alzxr1w": {
+                "product_name": "Alz Dual Band RX 1W",
+                "lua_name": "Alz XR1 1W",
+                "layout_file": "Generic C3 LR1121.json",
+                "overlay": {
+                    "serial1_rx": 18,
+                    "serial1_tx": 19,
+                    "power_values_dual": [-10, -6, -3, 2],
+                    "radio_rfsw_ctrl": [15, 0, 4, 8, 8, 2, 0, 1],
+                    "power_lna_gain": 12
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
@@ -275,7 +292,8 @@
                 "overlay": {
                     "radio_busy_2": 19,
                     "radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5],
-                    "led_rgb": 9
+                    "led_rgb": 9,
+                    "power_lna_gain": 12
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
@@ -289,7 +307,8 @@
                 "overlay": {
                     "serial1_rx": 5,
                     "serial1_tx": 18,
-                    "radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5]
+                    "radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5],
+                    "power_lna_gain": 12,
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
