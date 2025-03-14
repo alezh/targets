@@ -312,7 +312,7 @@
                     "serial1_rx": 5,
                     "serial1_tx": 18,
                     "radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5],
-                    "power_lna_gain": 12,
+                    "power_lna_gain": 12
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
