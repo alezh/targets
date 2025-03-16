@@ -72,7 +72,7 @@
                 "overlay": {
                     "serial1_rx": 5,
                     "serial1_tx": 18,
-                    "radio_rst_2": 21,
+                    "radio_rst_2": 12,
                     "radio_dcdc": true
                 },
                 "min_version": "3.0.0",
