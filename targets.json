@@ -13,6 +13,17 @@
                 "logo_file": "axis_tft.bin",
                 "firmware": "Unified_ESP32_2400_TX"
             },
+            "micro1wv2": {
+                "product_name": "Alz 2.4GHz 1W Micro V2 TX",
+                "lua_name": "Alz 2G4 TX 1W",
+                "layout_file": "Alz 2400 Micro 1W v2.json",
+                "features": ["fan"],
+                "upload_methods": ["uart", "wifi"],
+                "platform": "esp32",
+                "min_version": "3.0.0",
+                "logo_file": "axis_tft.bin",
+                "firmware": "Unified_ESP32_2400_TX"
+            },
             "geminiMav": {
                 "product_name": "Alz 2.4Ghz Gemini Mavlink TX",
                 "lua_name": "Alz Gemini2G4TX",
