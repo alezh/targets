@@ -277,7 +277,10 @@
                 "layout_file": "Alz LR1121 500.json",
                 "overlay": {
                     "serial_rx": 18,
-                    "serial_tx": 18
+                    "serial_tx": 18,
+                    "radio_rfo_hf": true,
+                    "radio_dcdc": true,
+                    "radio_rfsw_ctrl": [31, 0, 16, 28, 0, 2, 0, 1]
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
@@ -324,11 +327,14 @@
             },
             "alz500": {
                 "product_name": "Alz Gemini X RX 500mW",
-                "lua_name": "Alz C3 GRX",
+                "lua_name": "Alz Gemini RX 500mW",
                 "layout_file": "Alz LR1121 500.json",
                 "overlay": {
                     "serial1_rx": 5,
-                    "serial1_tx": 18
+                    "serial1_tx": 18,
+                    "radio_rfo_hf": true,
+                    "radio_dcdc": true,
+                    "radio_rfsw_ctrl": [31, 0, 16, 28, 0, 2, 0, 1]
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
@@ -336,7 +342,7 @@
                 "firmware": "Unified_ESP32_LR1121_RX"
             },
             "alzxr4": {
-                "product_name": "Alz D4 True Diversity RX",
+                "product_name": "Alz Gemini X RX",
                 "lua_name": "Alz D4 GX",
                 "layout_file": "Alz LR1121 True Diversity.json",
                 "overlay": {
