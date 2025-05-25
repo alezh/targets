@@ -324,11 +324,14 @@
             },
             "alz500": {
                 "product_name": "Alz Gemini X RX 500mW",
-                "lua_name": "Alz C3 GRX",
+                "lua_name": "Alz GemX500mW",
                 "layout_file": "Alz LR1121 500.json",
                 "overlay": {
                     "serial1_rx": 5,
-                    "serial1_tx": 18
+                    "serial1_tx": 18,
+                    "radio_rfo_hf": true,
+                    "radio_dcdc": true,
+                    "radio_rfsw_ctrl": [31, 0, 16, 28, 0, 2, 0, 1]
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
