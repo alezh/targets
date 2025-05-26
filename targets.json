@@ -330,8 +330,8 @@
                     "serial1_rx": 5,
                     "serial1_tx": 18,
                     "radio_rfo_hf": true,
-                    "radio_dcdc": true,
-                    "radio_rfsw_ctrl": [31, 0, 20, 24, 0, 2, 0, 1]
+                    "radio_rfsw_ctrl": [31, 0, 20, 28, 0, 2, 0, 1],
+                    "power_lna_gain": 12
                 },
                 "upload_methods": ["uart", "wifi", "betaflight"],
                 "min_version": "3.5.0",
