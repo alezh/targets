@@ -21,7 +21,7 @@
     "power_max": 5,
     "power_default": 3,
     "power_control": 0,
-    "power_values": [-17,-12,-9,-5,0,7],
+    "power_values": [-5,-1,5,7,10,15],
     "power_values_dual": [-18,-15,-10,-3,0,2],
 
     "led_rgb": 19,
