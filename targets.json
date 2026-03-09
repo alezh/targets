@@ -47,6 +47,15 @@
                 "logo_file": "axis_tft.bin",
                 "platform": "esp32-s3",
                 "firmware": "Unified_ESP32S3_2400_TX"
+            },
+            "ii24g":{
+                "product_name": "HPXGRC 2.4Ghz TX",
+                "lua_name": "HPXGRC 2G4TX",
+                "layout_file": "DIY 2400 AP.json",
+                "upload_methods": ["uart", "wifi", "etx"],
+                "platform": "esp32",
+                "min_version": "3.0.0",
+                "firmware": "Unified_ESP32_2400_TX"
             }
         },
         "rx_2400": {
